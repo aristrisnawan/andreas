@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation" app:startDestination="@id/main">
+
+    <fragment android:id="@+id/main" android:name="org.d3ifcool4081.kalkulatorbmi.main" android:label="Bangun Datar"
+              tools:layout="@layout/fragment_main">
+
+        <action android:id="@+id/action_main_to_about" app:destination="@id/about"/>
+        <action android:id="@+id/action_main_to_main2" app:destination="@id/main2"/>
+    </fragment>
+    <fragment android:id="@+id/about" android:name="org.d3ifcool4081.kalkulatorbmi.about" android:label="about"
+              tools:layout="@layout/fragment_about"
+    />
+    <fragment android:id="@+id/main2" android:name="org.d3ifcool4081.kalkulatorbmi.main" android:label="main">
+        <action android:id="@+id/action_main2_to_main3" app:destination="@id/main3"/>
+        <action android:id="@+id/action_main2_to_mainActivity2" app:destination="@id/mainActivity2"/>
+        <action android:id="@+id/action_main2_to_main4" app:destination="@id/main4"/>
+        <action android:id="@+id/action_main2_to_main5" app:destination="@id/main5"/>
+        <action android:id="@+id/action_main2_to_main6" app:destination="@id/main6"/>
+    </fragment>
+    <fragment android:id="@+id/main3" android:name="org.d3ifcool4081.kalkulatorbmi.main" android:label="main"/>
+    <activity android:id="@+id/mainActivity2" android:name="org.d3ifcool4056.myapplication.MainActivity"
+              android:label="MainActivity"/>
+    <fragment android:id="@+id/main4" android:name="org.d3ifcool4081.kalkulatorbmi.main" android:label="main"/>
+    <fragment android:id="@+id/main5" android:name="org.d3ifcool4081.kalkulatorbmi.main" android:label="main"/>
+    <fragment android:id="@+id/main6" android:name="org.d3ifcool4081.kalkulatorbmi.main" android:label="main"/>
+
+</navigation>
